@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#076bdd"
+    tools:context="com.example.student.lolbasics.MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:id="@+id/App_Name_Text_View"
+            android:layout_gravity="center"
+            android:layout_weight="0.86"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#ff9a03" />
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/champions_button"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/champions_button"
+            android:layout_gravity="top|center_horizontal"
+            android:textColor="#ff9a03" />
+
+        <Button
+            android:id="@+id/items_button"
+
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/items_button"
+            android:layout_gravity="center"
+            android:textColor="#ff9a03" />
+
+        <Button
+            android:id="@+id/find_your_champion_button"
+
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/find_your_champion_button"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff9a03" />
+
+    </LinearLayout>
+
+</RelativeLayout>

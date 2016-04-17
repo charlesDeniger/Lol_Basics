@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LolBasics</string>
+
+
+    <string name="champions_button">Champions</string>
+    <string name="items_button">Items</string>
+    <string name="find_your_champion_button">Find the Champ for YOU!</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
